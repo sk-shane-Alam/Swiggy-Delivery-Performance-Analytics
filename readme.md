@@ -1,164 +1,133 @@
-# 🍽️ Swiggy Delivery Performance Analytics — Power BI | Python | Excel
+# 🍽️ **Swiggy Delivery Performance Analytics**
 
-### A complete end-to-end data analytics project analyzing Swiggy’s delivery operations, customer behavior, profitability, and business performance using Python, Excel, Power BI, and DAX.
+Food delivery platforms generate massive data every second — from customer orders to delivery times, traffic, weather, and profitability.
+This project analyzes Swiggy’s delivery performance to uncover insights into **operations efficiency, customer behavior, profitability, and real-world business patterns**.
+Using **Python, Excel, and interactive dashboards**, this project simulates analysis typically done inside food delivery companies.
 
-### This project simulates real-world analytics work done inside food-delivery companies.
-![Dashboard Page 1](/Dashboard/dashboard%20images/Executive%20Overview.png)
+---
 
-## 📌 Project Objective
+## ❗ **Problem Statement**
 
-To analyze Swiggy’s delivery operations and uncover key insights such as:
+Food-delivery businesses often struggle to understand the hidden factors behind delivery delays, profit loss, high cancellations, and fluctuating customer behavior.
+Without proper analytics, identifying patterns related to distance, traffic, weather, and discounts becomes difficult.
 
-* What causes delivery delays?
+This project solves that gap through structured analysis, modeling, and dashboarding to highlight the most important operational and financial insights.
 
-* Which cities and cuisines are most profitable?
+---
 
-* How do customers behave across age, location, and spending?
+# 📊 **Swiggy Analytics Dashboard**
 
-* How discounts, distance, weather & traffic impact profit?
+> Add your actual Power BI screenshots in the `images/` folder.
 
-## 📂 Project Workflow
+### **Executive Insights**
 
-1️⃣ Data Collection (Raw Zomato CSV)
+https://github.com/sk-shane-Alam/Swiggy-Delivery-Performance-Analytics/blob/84285c557010af89fdb5a9b17df993cc89e972b2/Dashboard/dashboard%20images/Executive%20Overview.png
 
-2️⃣ Data Enrichment using Python
+### **Delivery Operations Efficiency**
 
-* Added: Order price, discount %, final amount
+```
+![Delivery Ops](images/swiggy_delivery_operations.png)
+```
 
-* Added: Delivery distance, delivery cost
+### **Profitability & Finance**
 
-* Added: Customer age, payment method, cuisine
+```
+![Profitability](images/swiggy_profitability.png)
+```
 
-* Added: Profit, commissions, status, flags
+---
 
-* Cleaned over 45K+ records
+## 🧩 **Project Workflow (Short Table Format)**
 
-3️⃣ Data Cleaning in Excel
+| Step                             | Task                         | Key Actions                                                                             |
+| -------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------- |
+| **1️⃣ Data Collection**          | Import raw food delivery CSV | 45K+ Swiggy/Zomato-like records                                                         |
+| **2️⃣ Data Enrichment (Python)** | Add calculated features      | Delivery distance, cost, profit, discount %, final amount, customer age, cuisine, flags |
+| **3️⃣ Data Cleaning (Excel)**    | Validation & correction      | Missing values, outliers, formatting, consistency                                       |
+| **4️⃣ Data Modeling (BI)**       | Relationship building & DAX  | KPI measures, calculated columns, field grouping                                        |
+| **5️⃣ Dashboard Development**    | 3-page report                | Executive Insights, Delivery Operations, Profitability & Finance                        |
 
-* Missing values
+---
 
-* Outliers
+## 📊 **Dashboard Development (3 Pages)**
 
-* Column formatting
+*(Customer Analytics section removed)*
 
-* Consistency & data types
+### 🔹 **Executive Insights**
 
-4️⃣ Power BI Modeling
+* Total orders, delivered %, cancellation rate
+* Revenue, average delivery time
+* Demand trends & top-performing cities
 
-* Relationship modeling
+### 🔹 **Delivery Operations Efficiency**
 
-* DAX measures
+* Traffic, weather, vehicle type & distance impact
+* Delay reason analysis
+* Delivery time vs distance patterns
 
-* Calculated columns
+### 🔹 **Profitability & Finance**
 
-* KPI indicators & trendline analysis
+* Revenue vs cost vs profit
+* Discount impact & margin analysis
+* Loss-making order identification
+* Profit segmentation across cuisines & cities
 
-5️⃣ Dashboard Report Development (4 Pages)
+---
 
-* Executive Insights
+## 📈 **Key Insights**
 
-* Delivery Operations Efficiency
+* High traffic increases delivery time by **~25%**.
+* Discounts above **20% sharply reduce profit margins**.
+* **Snacks & Biryani** categories show highest profitability.
+* Long-distance orders (**over 6 km**) often result in losses.
+* Evening hours observe the highest order volume.
 
-* Customer Behavior Analytics
+---
 
-* Profitability & Finance
+## 🛠️ **Tech Stack Used**
 
-## 📊 Dashboard Pages
+| Tool                              | Purpose                                                 |
+| --------------------------------- | ------------------------------------------------------- |
+| **Python (Pandas, NumPy)**        | Data enrichment, calculations, preprocessing            |
+| **Excel**                         | Data cleaning, consistency checks                       |
+| **Power BI (DAX + Dashboarding)** | Building visuals, KPIs, calculations, and relationships |
+| **GitHub**                        | Documentation & version control                         |
 
-1️⃣ Executive Overview
+---
 
-* Total Orders, Delivered %, Cancel Rate
+# 🧠 **Conclusion / Benefits**
 
-* Revenue, Avg Delivery Time
+This project delivers a complete analytical view of Swiggy’s delivery ecosystem, helping different teams make smarter decisions:
 
-* Demand trends & top cities
+### 💡 **For Business Strategy**
 
-2️⃣ Delivery Operation Efficiency
+* Identify profitable vs loss-making order segments
+* Understand discount thresholds affecting margin
 
-* Traffic impact
+### 🚴 **For Delivery Operations**
 
-* Delivery distance vs time
+* Detect patterns causing delays: traffic, weather, distance
+* Optimize delivery time and fleet planning
 
-* Vehicle type analysis
+### 🧾 **For Finance Teams**
 
-* Weather delay analysis
+* Evaluate profit vs cost across cuisines, cities, and order types
+* Spot financial leaks caused by distance or heavy discounts
 
-3️⃣ Customer & Behavioral Analytics
+### 📊 **For Data Teams**
 
-* Customer age groups
+* Learn an end-to-end analytics workflow from raw data → cleaning → analysis → dashboard
+* Demonstrate practical use of Python, Excel, and BI tools
 
-* Payment preferences
+Overall, this project provides clear operational, financial, and strategic insights that can improve delivery performance, profitability, and customer satisfaction in real food-delivery businesses.
 
-* Spend distribution
+---
 
-* Customer city & cuisine trends
+If you want, I can also:
 
-4️⃣ Profitability & Finance
+🔥 Add GitHub **About section**
+🔥 Add **topics/tags** for discoverability
+🔥 Create a **banner for your repo**
+🔥 Make a **LinkedIn post** to showcase this project
 
-* Revenue vs Cost vs Profit
-
-* Discount impact
-
-* Loss-making orders
-
-* Profit segmentation
-
-
-## 📷 Dashboard Screenshots
-### Executive Overview Page
-
-![Dashboard Page 1](/Dashboard/dashboard%20images/Executive%20Overview.png)
-
-### Delivery Operations Page
-
-![Dashboard Page 1](/Dashboard/dashboard%20images/Delivery%20Operations.png)
-
-### Customer Analytics Page
-
-![Dashboard Page 1](/Dashboard/dashboard%20images/Customer%20Analytics.png)
-
-### Profitability & Finance Page
-
-![Dashboard Page 1](/Dashboard/dashboard%20images/Profitability%20&%20Finance.png)
-
-## 📈 Key Insights
-
-- High traffic density increases delivery time by ~25%.
-
-- Discounts above 20% lead to negative margin.
-
-- Snacks & biryani categories generate highest profit.
-
-- Long-distance orders (>6 km) often result in losses.
-
-- Card is the most preferred payment method.
-
-## 🛠️ Tech Stack Used
-
-- Python (Pandas, NumPy)
-
-- Excel (Cleaning & preprocessing)
-
-- Power BI (DAX, Dashboarding)
-
-- GitHub (Version control & documentation)
-
-## 📝 How to Use
-
-1. Download dataset
-
-2. Load .pbix file into Power BI
-
-3. Refresh data
-
-4. Explore insights
-
-## 👨‍💻 Author
-
-### Allen Isaac J
-### Data Analyst | Power BI | Python | MS Excel | MySQL
-📩 Email: allenisaac04062001@gmail.com
-
-🔗 LinkedIn: https://www.linkedin.com/in/allen-isaac-j-8488ba269/
-
-🔗 Portfolio: https://www.datascienceportfol.io/allenPortfolio
+Just tell me, bro!
